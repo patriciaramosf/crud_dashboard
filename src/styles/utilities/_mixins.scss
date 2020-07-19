@@ -1,0 +1,13 @@
+@import './utilities/_variables.scss';
+
+@mixin forTablet {
+    @media (min-width: #{$GitTablet}) {
+        @content
+    }
+  }
+
+  @mixin forDesktop {
+    @media (min-width: #{$GitDesktop}) {
+        @content
+    }
+  }

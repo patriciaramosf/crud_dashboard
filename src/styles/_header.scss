@@ -4,11 +4,16 @@
     background-color: $backgroundColorHeader;
     text-align: center;
     font-size: $fontGeneralHeader;
-    border:none;
     height:100px;
     padding:14px;
     padding-top:25px;
     font-weight: bold;
     color:$fontHeaderColor;
     line-height: 16px;
+    @include forTablet{
+        height:200px;
+        font-size: $fontTabletHeader;
+        padding-top:65px;
+        line-height: 26px;
+}
 }
