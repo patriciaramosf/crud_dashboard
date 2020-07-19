@@ -4,12 +4,24 @@ import Header from './Header';
 import UserList from './UserList';
 import CreateUser from './CreateUser';
 import EditUser from './EditUser';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Switch>
+          <Route exact path="/">
+                    <Header/>
+                    <UserList link="/createuser"
+                    />
+          </Route>
+          <Route exact path="/createuser">
+                    <CreateUser/>
+          </Route>
+          <Route path="/edituser">
+                  <EditUser/>
+          </Route>
+        </Switch>
     </div>
   );
 }

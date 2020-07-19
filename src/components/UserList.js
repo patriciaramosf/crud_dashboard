@@ -1,8 +1,16 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import CreateUser from './CreateUser';
+import { BrowserRouter as Link } from "react-router-dom";
 
-const UserList = () =>{
+const UserList = (props) =>{
 return(
-    <div>UserList</div>
+    <div className="UserList">
+        <Link to={props.link}><Button variant="contained" color="primary">
+            Add Info
+        </Button>
+        </Link>
+    </div>
 )
 }
 
