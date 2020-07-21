@@ -4,16 +4,19 @@
     background-color: $backgroundColorHeader;
     text-align: center;
     font-size: $fontGeneralHeader;
-    height:100px;
+    height:140px;
     padding:14px;
-    padding-top:25px;
+    padding-top:45px;
     font-weight: bold;
     color:$fontHeaderColor;
     line-height: 16px;
+    opacity:0.8;
+    text-shadow: 2px 2px black;
     @include forTablet{
         height:200px;
         font-size: $fontTabletHeader;
         padding-top:65px;
         line-height: 26px;
+        text-shadow: 4px 4px black;
 }
 }

@@ -1,0 +1,17 @@
+.createUser{
+    .goback{
+        margin-top:20px;
+        margin-left:20px;
+        margin-bottom:40px;
+    }
+    .myForm{
+
+        padding:25px;
+        display:flex;
+        flex-direction: column;
+    }
+    .buttontoAdd{
+       position:absolute;
+       right:30px;
+    }
+}

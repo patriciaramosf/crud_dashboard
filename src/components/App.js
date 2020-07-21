@@ -6,19 +6,21 @@ import CreateUser from './CreateUser';
 import EditUser from './EditUser';
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Switch>
           <Route exact path="/">
                     <Header/>
-                    <UserList link="/createuser"
+                    <UserList link="/create-user"
+                              linkEdit="/edit-user/id"
                     />
           </Route>
-          <Route exact path="/createuser">
-                    <CreateUser/>
+          <Route exact path="/create-user">
+                    <CreateUser link="/"
+                    />
           </Route>
-          <Route path="/edituser">
+          <Route path="/edit-user/:id">
                   <EditUser/>
           </Route>
         </Switch>
