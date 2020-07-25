@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button } from '@material-ui/core/';
+import {Button, Modal } from '@material-ui/core/';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Particles from 'react-particles-js';
 import FormContainer from './FormContainer';

@@ -2,17 +2,15 @@ import React , {useState} from 'react';
 import AddIcon from '@material-ui/icons/Add';
 import {FormControl, Input, InputLabel, Fab,} from '@material-ui/core/';
 
-
-
 const FormContainer = () =>{
     const [values, setValues] = useState({email: '', name: '', book: ''});  
     const handleInputChange = event => {
-        const {name, value} = event.target
+        const {name, value} = event.target;
         setValues({...values, [name]: value})
     }
     const handleSubmit = (event) => {
-        event.preventDefault()
-        console.log(values)
+        event.preventDefault();
+        console.log(values);
     }
     return(
     <form className="myForm" onSubmit={handleSubmit}>
@@ -51,5 +49,5 @@ const FormContainer = () =>{
         </Fab>
     </form>
     )}
-
+    
 export default FormContainer;
