@@ -5,7 +5,7 @@ import {FormControl, Input, InputLabel, Fab,} from '@material-ui/core/';
 
 
 const FormContainer = () =>{
-    const [values, setValues] = useState({email: '', name: '', book: ''})
+    const [values, setValues] = useState({email: '', name: '', book: ''});  
     const handleInputChange = event => {
         const {name, value} = event.target
         setValues({...values, [name]: value})
@@ -14,7 +14,6 @@ const FormContainer = () =>{
         event.preventDefault()
         console.log(values)
     }
-    
     return(
     <form className="myForm" onSubmit={handleSubmit}>
         <FormControl>
