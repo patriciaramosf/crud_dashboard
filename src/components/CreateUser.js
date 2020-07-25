@@ -5,9 +5,10 @@ import Particles from 'react-particles-js';
 import FormContainer from './FormContainer';
 
 const CreateUSer = (props) =>{
+    const { link } = props;
     return(
         <div className="createUser">
-            <Link to={props.link}>
+            <Link to={link}>
                 <Button variant="contained" color="secondary" className="goback">
                         Go back
                 </Button>
