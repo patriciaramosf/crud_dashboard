@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/App.scss';
 import Header from './Header';
+import Aside from './Aside';
 import UserList from './UserList';
 import CreateUser from './CreateUser';
 import EditUser from './EditUser';
@@ -12,6 +13,7 @@ const App = () => {
       <Switch>
           <Route exact path="/">
                     <Header/>
+                    <Aside/>
                     <UserList link="/create-user"
                               linkEdit="/edit-user/id"
                     />

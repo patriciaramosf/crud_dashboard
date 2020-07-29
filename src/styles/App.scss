@@ -2,6 +2,7 @@
 @import './utilities/_variables.scss';
 @import './utilities/_mixins.scss';
 @import './_header.scss';
+@import './_aside.scss';
 @import './_createUser.scss';
 @import './_editUser.scss';
 @import './_userList.scss';
@@ -11,4 +12,6 @@ a{
 }
 .App{
     font-family: Roboto;
+    background-color: #f5f5f5;
+    height:100vh;
 }
