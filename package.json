@@ -14,7 +14,7 @@
     "react-hook-form": "^6.0.8",
     "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-virtualized": "^9.21.2"
   },
   "scripts": {
